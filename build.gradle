@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.github.jason-lang:jason-interpreter:3.3.0-SNAPSHOT'
+    implementation 'io.github.jason-lang:jason-interpreter:3.2.1'
 
     // to use locally installed jars:
     implementation fileTree(dir: 'lib', include: '*.jar')
@@ -42,7 +42,7 @@ sourceSets {
 task run (type: JavaExec, dependsOn: 'classes') {
     description 'runs the application'
     mainClass = 'jason.infra.local.RunLocalMAS'
-    args = ['template.mas2j']
+    args = ['main.mas2j']
 	// options:
 	//     args = ['template.mas2j', '--debug', '--no-net', '--empty-mas']
 	//     args = ['template.mas2j', '--log-conf', 'l.p'] // to use file l.p to configure logging
@@ -52,6 +52,6 @@ task run (type: JavaExec, dependsOn: 'classes') {
 task runJade (type: JavaExec, dependsOn: 'classes') {
     description 'runs the application with Jade infrastructure'
     mainClass = 'jason.infra.jade.RunJadeMAS'
-    args = [ 'template.mas2j' ]
+    args = [ 'main.mas2j' ]
     classpath sourceSets.main.runtimeClasspath
 }
