@@ -7,7 +7,7 @@
     April 19, 2023 - 15:12:39
 */
 
-MAS t1 {
+MAS demo {
 
     environment: example.Env(10)
 
