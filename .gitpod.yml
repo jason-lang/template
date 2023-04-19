@@ -2,7 +2,7 @@ tasks:
   - before: yes | sdk install java 18.0.1.fx-zulu 
 #  - init: ./gradlew build
 
-vscode:
-  extensions:
+# vscode:
+#   extensions:
 #    - tabajara-krausburg.jacamo4code
-    - richardwillis.vscode-gradle
+#    - richardwillis.vscode-gradle
