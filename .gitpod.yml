@@ -1,6 +1,6 @@
 tasks:
   - before: yes | sdk install java 18.0.1.fx-zulu 
-  -init: ./gradlew build
+  - init: ./gradlew build
 
 vscode:
   extensions:
