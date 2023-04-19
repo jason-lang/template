@@ -40,6 +40,7 @@ sourceSets {
 }
 
 task run (type: JavaExec, dependsOn: 'classes') {
+    group = 'Jason'
     description 'runs the application'
     mainClass = 'jason.infra.local.RunLocalMAS'
     args = ['main.mas2j']
@@ -50,6 +51,7 @@ task run (type: JavaExec, dependsOn: 'classes') {
 }
 
 task runJade (type: JavaExec, dependsOn: 'classes') {
+    group = 'Jason'
     description 'runs the application with Jade infrastructure'
     mainClass = 'jason.infra.jade.RunJadeMAS'
     args = [ 'main.mas2j' ]
