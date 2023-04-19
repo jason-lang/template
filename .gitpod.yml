@@ -1,2 +1,2 @@
 tasks:
-  - before: sdk install java 18.0.1.fx-zulu 
+  - before: yes | sdk install java 18.0.1.fx-zulu 
