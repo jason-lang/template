@@ -15,15 +15,15 @@ apply plugin: 'java'
 
 repositories {
     mavenCentral()
-    maven { url "https://raw.githubusercontent.com/jacamo-lang/mvn-repo/master" }
-    maven { url "https://jade.tilab.com/maven/" }
+    //maven { url "https://raw.githubusercontent.com/jacamo-lang/mvn-repo/master" }
+    //maven { url "https://jade.tilab.com/maven/" }
 }
 
 dependencies {
     implementation 'io.github.jason-lang:jason-interpreter:3.2.1'
 
     // to use locally installed jars:
-    implementation fileTree(dir: 'lib', include: '*.jar')
+    //implementation fileTree(dir: 'lib', include: '*.jar')
 }
 
 sourceSets {
@@ -31,7 +31,7 @@ sourceSets {
         java {
             srcDir 'src/java'
             srcDir 'src/env'
-            srcDir '.' // some old jason apps store .java files in project root
+            //srcDir '.' // some old jason apps store .java files in project root
         }
         resources {
             srcDir 'src/resources'
