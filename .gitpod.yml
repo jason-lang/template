@@ -5,10 +5,13 @@ vscode:
   extensions:
      - https://open-vsx.org/api/tabajara-krausburg/jacamo4code/1.2.1/file/tabajara-krausburg.jacamo4code-1.2.1.vsix
 
-image:
-  file: .gitpod.Dockerfile
-ports:
-  - port: 5900
-    onOpen: ignore
-  - port: 6080
-    onOpen: open-browser
+# uncomment the following lines to have a VNC running por port 6080
+# you can run GUI applications there (using /workspace/template directory)
+#
+#image:
+#  file: .gitpod.Dockerfile
+#ports:
+#  - port: 5900
+#    onOpen: ignore
+#  - port: 6080
+#    onOpen: open-browser
