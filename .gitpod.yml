@@ -4,3 +4,11 @@ tasks:
 vscode:
   extensions:
      - https://open-vsx.org/api/tabajara-krausburg/jacamo4code/1.2.1/file/tabajara-krausburg.jacamo4code-1.2.1.vsix
+
+image:
+  file: .gitpod.Dockerfile
+ports:
+  - port: 5900
+    onOpen: ignore
+  - port: 6080
+    onOpen: open-browser
